@@ -1,0 +1,22 @@
+monitoring:
+  downloads_path: "~/Downloads"
+  organized_path: "~/Downloads/Organized"
+  file_types:
+    - "pdf"
+    - "txt"
+
+llm:
+  mode: "simulated"  # Options: "simulated" or "bedrock"
+  bedrock:
+    model: "anthropic.claude-v2"
+    region: "us-east-1"
+    max_tokens: 50
+
+processing:
+  content_sample_length: 1000
+  retry_attempts: 3
+  retry_delay: 2
+
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
